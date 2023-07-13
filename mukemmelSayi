@@ -1,0 +1,38 @@
+package giris;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class class3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Sayı giriniz: ");
+        int sayi = input.nextInt();
+        int toplam = 0;
+        int i = 1;
+        while (i<sayi){
+            if (sayi % i == 0){
+                toplam = toplam + i;
+                i++;
+            }else {
+                i++;
+            }
+        }if (toplam == sayi){
+            System.out.println(sayi+ " sayısı mükemmel sayıdır.");
+        }else{
+            System.out.println(sayi+" sayısı mükemmel sayı değildir.");
+        }
+
+
+
+
+
+
+
+    }
+
+}
+
+
+
+
+
